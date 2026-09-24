@@ -22,8 +22,7 @@ const ADVICE = [
   "Verify the sender's address carefully.",
   "Avoid downloading unexpected attachments.",
   "Hover over links to inspect the real URL.",
-  "When in doubt, report and confirm via another channel."
-"Watch out for urgent language demanding immediate action.",
+  "When in doubt, report and confirm via another channel.",
 "Never enter login credentials after following an email link.",
 "Look for generic greetings instead of your actual name.",
 "Inspect spelling mistakes and poor grammar in official messages.",
