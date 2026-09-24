@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Cyber OMAN Shield 2040 v1 – Settings</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <div class="options">
+    <h2>Cyber OMAN Shield 2040 v1 – Settings</h2>
+
+    <label>
+      Font size
+      <select id="fontSize">
+        <option value="normal">Normal</option>
+        <option value="large">Large</option>
+      </select>
+    </label>
+
+    <label>
+      <input type="checkbox" id="boldText" /> Bold text in banner
+    </label>
+
+    <label>
+      <input type="checkbox" id="apiChecks" /> Enable external API checks (VirusTotal, PhishTank, HIBP)
+    </label>
+
+    <h3>API Keys (optional)</h3>
+    <label>VirusTotal API key <input type="text" id="vtApiKey" placeholder="paste here" /></label>
+    <label>PhishTank App key <input type="text" id="phishTankAppKey" placeholder="paste here" /></label>
+    <label>Have I Been Pwned API key <input type="text" id="hibpApiKey" placeholder="paste here" /></label>
+
+    <h3>Theme</h3>
+    <label>
+      <select id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+
+    <div style="margin-top:16px;">
+      <button id="save" class="button">Save</button>
+      <span id="status" class="small"></span>
+    </div>
+
+    <hr />
+    <p><a href="docs/PRIVACY_POLICY.md" target="_blank">Privacy Policy</a> · <a href="docs/USAGE.md" target="_blank">Usage Instructions</a></p>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

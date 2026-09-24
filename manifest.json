@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Cyber OMAN Shield 2040 v1",
+  "version": "0.1.0",
+  "description": "Shows a phishing risk banner inside Gmail and a popup with score & advice.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": [
+    "https://mail.google.com/*",
+    "https://www.virustotal.com/*",
+    "https://checkurl.phishtank.com/*",
+    "https://haveibeenpwned.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Cyber OMAN Shield 2040 v1",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
