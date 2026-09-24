@@ -41,7 +41,6 @@ function analyzeEmailLocally(subject, bodyText, links) {
     "urgent", "verify", "password", "reset", "account", "login",
     "invoice", "gift", "bitcoin", "payment", "bank", "limited time",
     "confirm", "suspend", "unusual activity", "prize", "lottery" , "free" 
-    "click"
 
   ];
 
